@@ -6,12 +6,12 @@ it ("should translate x to -..-", () => {
     expect(result).toBe("-..-");
 })
 
-it ("should translate a to .-", () => {
-    const result = translator("a");
-    expect(result).toBe(".-");
-})
+// it ("should translate A to .-", () => {
+//     const result = translator("A");
+//     expect(result).toBe(".-");
+// })
 
-it ("should translate yes to -.--/./...", () => {
-    const result = translator("yes");
-    expect(result).toBe("-.--/./...");
-})
+// it ("should translate yes to -.--/./...", () => {
+//     const result = translator("yes");
+//     expect(result).toBe("-.--/./...");
+// })
