@@ -1,4 +1,4 @@
-import {translator} from './morse-translator.js';
+import {translateWords, translator} from './morse-translator.js';
 import {it, expect} from '@jest/globals';
 
 it ("should translate x to -..-", () => {
@@ -6,12 +6,17 @@ it ("should translate x to -..-", () => {
     expect(result).toBe("-..-");
 })
 
-// it ("should translate A to .-", () => {
-//     const result = translator("A");
-//     expect(result).toBe(".-");
-// })
+it ("should translate a to .-", () => {
+    const result = translator("a");
+    expect(result).toBe(".-");
+})
 
-// it ("should translate yes to -.--/./...", () => {
-//     const result = translator("yes");
-//     expect(result).toBe("-.--/./...");
-// })
+it ("should translate h to ....", () => {
+    const result = translator("h");
+    expect(result).toBe("....");
+})
+
+it ("should translate yes to -.--/./...", () => {
+    const result = translateWords("yes");
+    expect(result).toBe("-.--/./...");
+})
