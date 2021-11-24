@@ -1,7 +1,7 @@
 //Translate each letter to morse code
 
 export const translator = (message) => {
-console.log("message", message)
+    //console.log("message", message)
     const morseCode = {
         a: ".-",
         b: "-...",
@@ -19,7 +19,7 @@ console.log("message", message)
         n: "-.",
         o: "---",
         p: ".--.",
-        q: "--.-", 
+        q: "--.-",
         r: ".-.",
         s: "...",
         t: "-",
@@ -34,14 +34,12 @@ console.log("message", message)
 
     // if (message === "a") return morseCode.a;
     // if (message === "b") return morseCode.b;
-         
+    // if (message === "a") return morseCode.a;
+    // if (message === "b") return morseCode.b;
 
 }
 
-
-
 export const translateWords = (message) => {
-
     const morseCode = {
         a: ".-",
         b: "-...",
@@ -71,7 +69,22 @@ export const translateWords = (message) => {
         z: "--..",
     }
 
-    //morseCode.split("")
+    let word = message.split("");
+    console.log(word)
 
+    const translated = word.map(letter => {
+       
+        letter = morseCode[letter];
+        return letter;
+        //console.log(letter);
+        //console.log(letter.join('/'))
+        
+    })
+    return translated.join("/")
 
+ 
 }
+
+
+const input = document.querySelector(".input-box");
+
