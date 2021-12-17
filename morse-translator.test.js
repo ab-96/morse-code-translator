@@ -16,7 +16,7 @@ it ("should translate h to ....", () => {
     expect(result).toBe("....");
 })
 
-it ("should translate yes to -.--/./...", () => {
+it ("should translate yes to -.--....", () => {
     const result = translateWords("yes");
-    expect(result).toBe("-.--/./...");
+    expect(result).toBe("-.--....");
 })

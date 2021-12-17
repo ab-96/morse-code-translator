@@ -34,5 +34,8 @@ export const translateWords = (message) => {
         letter = morseCode[newLetter];
         return letter;
     })
+
     return translated.join("");
+    
 }
+

@@ -1,9 +1,9 @@
 "use strict";
 
-var output = document.querySelector(".output");
-var input = document.querySelector("input");
-var translate = document.querySelector(".translate");
-var reset = document.querySelector(".reset");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.translateWords = void 0;
 
 var translateWords = function translateWords(message) {
   var morseCode = {
@@ -40,13 +40,7 @@ var translateWords = function translateWords(message) {
     letter = morseCode[newLetter];
     return letter;
   });
-  return translated.join("/");
+  return translated.join("");
 };
 
-translate.addEventListener("click", function () {
-  output.innerHTML = translateWords(input.value);
-});
-reset.addEventListener("click", function () {
-  output.innerHTML = "";
-  input.value = "";
-});
+exports.translateWords = translateWords;

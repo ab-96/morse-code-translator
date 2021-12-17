@@ -16,7 +16,7 @@ var _globals = require("@jest/globals");
   var result = (0, _morseTranslator.translator)("h");
   (0, _globals.expect)(result).toBe("....");
 });
-(0, _globals.it)("should translate yes to -.--/./...", function () {
+(0, _globals.it)("should translate yes to -.--....", function () {
   var result = (0, _morseTranslator.translateWords)("yes");
-  (0, _globals.expect)(result).toBe("-.--/./...");
+  (0, _globals.expect)(result).toBe("-.--....");
 });
