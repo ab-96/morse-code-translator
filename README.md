@@ -6,7 +6,7 @@ This game was made during the 6th week of my _nology course.
 I used HTML SASS and vanilla Javascript. 
 
 [Check out the Live Demo!](https://ab-96.github.io/morse-code-translator/)
-![Janken Game](assets/images/morse-code.png)
+![Morse Code](assets/images/morse-code.png)
 
 
 ## How it works
